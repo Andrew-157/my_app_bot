@@ -1,13 +1,5 @@
-from sqlalchemy.orm import sessionmaker
+from session_folder import create_session
 from sqlalchemy import create_engine
-
-
-def create_session(engine):
-
-    Session = sessionmaker(bind=engine)
-    session = Session()
-
-    return session
 
 
 def main(connection_string):
