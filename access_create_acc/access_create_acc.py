@@ -15,7 +15,7 @@ def user_account(connection_string, schema):
     user_choice = input("I want to...")
 
     if user_choice.lower() == "register":
-        register(session, schema)
+        print(register(session, schema))
 
     if user_choice.lower() == "login":
         print(login(session, schema))
