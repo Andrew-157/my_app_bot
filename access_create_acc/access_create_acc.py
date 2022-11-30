@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from models import Account
 
 
-def accessing_account(connection_string, schema):
+def user_account(connection_string, schema):
 
     engine = create_engine(connection_string)
     session = create_session(engine)
