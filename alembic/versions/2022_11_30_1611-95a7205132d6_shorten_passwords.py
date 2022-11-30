@@ -1,8 +1,8 @@
 """shorten passwords
 
-Revision ID: 7cc0a8da80c3
-Revises: 5a8999867326
-Create Date: 2022-11-30 16:07:31.700577
+Revision ID: 95a7205132d6
+Revises: 9821a8d458dc
+Create Date: 2022-11-30 16:11:00.260343
 
 """
 from alembic import op
@@ -10,8 +10,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '7cc0a8da80c3'
-down_revision = '5a8999867326'
+revision = '95a7205132d6'
+down_revision = '9821a8d458dc'
 branch_labels = None
 depends_on = None
 
