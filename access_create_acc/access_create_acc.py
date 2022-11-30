@@ -1,7 +1,6 @@
-from session_folder import create_session
-from register_login import register, login
+from session_folder.create_session import create_session
+from access_create_acc.register_login import register, login
 from sqlalchemy import create_engine
-from models import Account
 
 
 def user_account(connection_string, schema):

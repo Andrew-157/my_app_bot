@@ -1,6 +1,6 @@
-from validation.email import email_validation
-from validation.name import name_validation
-from validation.password import password_validate
+from access_create_acc.validation.email import email_validation
+from access_create_acc.validation.name import name_validation
+from access_create_acc.validation.password import password_validate
 
 
 def login(session, schema):
@@ -85,7 +85,7 @@ def register(session, schema):
             break
 
     new_account = schema(name=user_name, email=user_email,
-                         user_password=user_password)
+                         password=user_password)
     session.add(new_account)
     session.commit()
 
